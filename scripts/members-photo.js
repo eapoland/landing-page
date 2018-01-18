@@ -6,7 +6,7 @@ const photoFolder = './src/images/members/',
   Rx = require('rxjs/Rx'),
   readDir = promisify(fs.readdir),
   sizeOf = promisify(require('image-size')),
-  limit = 138;
+  limit = 132 * 2; // img size, times retina pixels
 
 const filesArray$ = Rx.Observable.from(readDir(photoFolder)),
   files$ = filesArray$.flatMap(array => Rx.Observable.from(array)),
@@ -19,3 +19,5 @@ const filesArray$ = Rx.Observable.from(readDir(photoFolder)),
   overSizedPaths$ = overSized$.map(imageInfo => imageInfo.path);
 
 overSizedPaths$.subscribe(path => console.log(path));
+
+module.exports = overSizedPaths$;
