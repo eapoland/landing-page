@@ -4,12 +4,15 @@ var browserSync = require('browser-sync');
 var reload = browserSync.reload;
 var nunjucksRender = require('gulp-nunjucks-render');
 var pump = require('pump');
+var fs = require('fs');
 
 const PATHS = {
     output: 'dist',
     templates: 'src/templates',
     pages: 'src/pages'
 };
+
+const blogPosts = JSON.parse(fs.readFileSync('src/blog-posts.json', 'utf8'));
 
 gulp.task('styles', function () {
     var processors = [
@@ -32,7 +35,10 @@ gulp.task('templates', function() {
     return gulp.src(PATHS.pages + '/**/*.+(html|js|css)')
         .pipe(nunjucksRender({
             path: [PATHS.templates],
-            watch: true
+            watch: true,
+            data: {
+                blogPosts
+            }
         }))
         .pipe(gulp.dest(PATHS.output));
 });

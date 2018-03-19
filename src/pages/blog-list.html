@@ -6,74 +6,27 @@
 
 <section class="section-padding-top blog-list">
 
-  <article class="background border-bottom ">
+  {% for post in blogPosts %}
+
+  <article class="{% if loop.index % 2 == 1 %} background {% endif %} border-bottom ">
     <div class="container-fluid page-container">
-      <div class="row section section__border section__border--first">
+        <div class="row section section__border {% if loop.index == 1 %} section__border--first {% endif %}">
         <div class="col-12 col-md-10">
           <h2>
-            <a href="{{ base_url }}blog/post-1.html" class="border-bottom d-inline-block">
-              Myśl jak efektywny altruista
+            <a href="{{ base_url }}{{ post.path }}" class="border-bottom d-inline-block">
+              {{ post.title }}
             </a>
           </h2>
 
-          <small>Opublikowany 1.12.2017</small>
+          <small>Opublikowany {{ post.date }}</small>
 
-          <p>
-            Oto 5 kluczowych pytań, które zadaje efektywny altruizm.
-          </p>
+          <p>{{ post.excerpt }}</p>
         </div>
       </div>
     </div>
   </article>
 
-  <article class="border-bottom">
-    <div class="container-fluid page-container">
-      <div class="row section section__border">
-        <div class="col-12 col-md-10">
-          <h2>
-            <a href="blog/post-2.html" class="border-bottom d-inline-block">
-              Dlaczego warto pomagać?
-            </a>
-          </h2>
-
-          <small>Opublikowany 20.01.2018</small>
-
-          <p>
-            Na świecie obecnie żyje 7,5 miliarda ludzi z tego 10,7% (według
-            danych Banku Światowego z 2011) żyje w skrajnym ubóstwie. O
-            skrajnym ubóstwie mówimy wtedy gdy człowiek na przeżycie ma 1,9$
-            dziennie. Oczywiście możemy tu się spierać, że inaczej żyje się za
-            taką kwotę w Europie niż np. w Azji. Natomiast Bank Światowy
-            uwzględnia różnice w &hellip;
-          </p>
-        </div>
-      </div>
-    </div>
-  </article>
-   
-  <article class="background border-bottom">
-    <div class="container-fluid page-container">
-      <div class="row section section__border">
-        <div class="col-12 col-md-10">
-          <h2>
-            <a href="blog/post-3.html" class="border-bottom d-inline-block">
-              Czy empatia jest zawsze dobra?
-            </a>
-          </h2>
-
-          <small>Opublikowany 17.03.2018</small>
-
-          <p>
-            Wydaje się, że empatia jest nieodłącznym elementem moralności i to
-            ona popycha nas do pomagania innym. Natomiast profesor Paul Bloom w
-            swojej najnowszej książce „Przeciw Empatii. Argumenty za
-            Racjonalnym Współczuciem” wprost przeciwstawia się empatii
-            wykazując, że może ona wręcz &hellip;
-          </p>
-        </div>
-      </div>
-    </div>
-  </article>
+  {% endfor %}
 
 </section>
 
