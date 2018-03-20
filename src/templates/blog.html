@@ -23,6 +23,24 @@
                     {% block postcontent %}{% endblock %}
 
                     <p>Masz do nas pytanie? Chcesz się czymś podzielić? <a href="{{ base_url }}napisz-do-nas.html" class="link">Napisz do nas</a> lub udostępnij wpis w mediach społecznościowych i zacznij dyskusję!</p>
+
+                    <div id="disqus_thread"></div>
+                    <script>
+
+                    var disqus_config = function () {
+                    this.page.url = 'http://efektywnyaltruizm.org';
+                    this.page.identifier = {{ post_id }};
+                    };
+
+                    (function() { // DON'T EDIT BELOW THIS LINE
+                    var d = document, s = d.createElement('script');
+                    s.src = 'https://efektywnyaltruizm-org.disqus.com/embed.js';
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                    })();
+                    </script>
+                    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
                 </article>
             </div>
 
