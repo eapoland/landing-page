@@ -2,3 +2,32 @@
 
 {% set page = 'blog' %}
 {% set base_url = '../' %}
+{% set post = blogPosts[post_id] %}
+
+{% block content %}
+
+<section class="article-wrapper border-bottom">
+    <div class="page-container">
+        <div class="row">
+            <div class="col-12 col-md-10 order-md-1">
+                <article class="article">
+                    <div class="breadcrumb">
+                      <a href="{{ base_url }}/blog-list.html">Lista wpisów</a> &gt; <span class="active">{{ post.title }}</span>
+                    </div>
+
+                    <h2><span class="border-bottom d-inline-block">{{ post.title }}</span></h2>
+                      <small>
+                        opublikowany {{ post.date }}{% if post.info %} | {{ post.info }}{% endif %}
+                      </small>
+
+                    {% block postcontent %}{% endblock %}
+
+                    <p>Masz do nas pytanie? Chcesz się czymś podzielić? <a href="{{ base_url }}napisz-do-nas.html" class="link">Napisz do nas</a> lub udostępnij wpis w mediach społecznościowych i zacznij dyskusję!</p>
+                </article>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+{% endblock %}

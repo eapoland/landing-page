@@ -1,247 +1,219 @@
 {% extends "blog.html" %}
+{% set post_id = "post-3" %}
 
-{% block content %}
+{% block postcontent %}
 
-<section class="article-wrapper border-bottom">
-  <div class="page-container">
-    <div class="row">
+<!-- TODO replace with class on the element above -->
+<br />
+<br />
 
-      <div class="col-12 col-md-8 order-md-1">
-        <article class="article">
-          <div class="breadcrumb">
-            <a href="{{ base_url }}/blog-list.html">Lista wpisów</a> > <span class="active">Dlaczego warto pomagać?</span>
-          </div>
+<p>
+  Wydaje się, że empatia jest nieodłącznym elementem moralności i to
+  ona popycha nas do pomagania innym. Natomiast profesor Paul Bloom w
+  swojej najnowszej książce „Przeciw Empatii. Argumenty za
+  Racjonalnym Współczuciem” wprost przeciwstawia się empatii
+  wykazując, że może ona wręcz przeszkadzać w pomaganiu a także, że
+  bez empatii moglibyśmy czynić więcej dobra. W poniższym artykule
+  chciałabym przedstawić argumenty za takim podejściem, które ma na
+  celu nie tylko podważyć znaczenie empatii, ale także wspierać
+  świadomą, rozważną refleksję w życiu codziennym.
+</p>
 
-          <h2><span class="border-bottom d-inline-block">Czy empatia jest zawsze dobra?</span></h2>
+<p>
+  Na początku musimy wyjaśnić o czym mówimy myśląc o empatii. Termin
+  jest mocno rozbudowany i często używany bardzo szeroko. To nad czym
+  faktycznie chcemy się skupić to tzw. empatia emocjonalna – czyli
+  współodczuwanie, widzę i odczuwam twój ból czy inaczej doświadczam
+  tego co, jak sądzę ty doświadczasz.  Jest ona inna niż tzw. empatia
+  poznawcza – czyli to, że rozumiem co ty czujesz jednak
+  niekoniecznie ja czuję to samo.
+</p>
 
-          <small>
-            opublikowany 17.03.2018 | autor: Maria Gembarzewska-Truong
-          </small>
+<p>
+  Kolejnym elementem, któremu należy się przyjrzeć jest założenie, że
+  empatia jest fundamentem moralności. Bloom zauważa, że jest wiele
+  czynów, które uznajemy za niewłaściwe pomimo tego, że nie
+  pozostawiają po sobie wyraźnych ofiar. Nie pochwalamy osób, które
+  rzucają śmieci na chodnik czy oszukują w zeznaniach podatkowych
+  pomimo tego, że nie ponosi tu szkody żadna konkretna osoba. Inny
+  przykład podaje profesor Peter Singer odnosząc się do często
+  używanego przez niego przykładu z dzieckiem, które topi się w
+  stawie. Gdybyśmy byli świadkami takiej sytuacji prawdopodobnie
+  wskoczyli byśmy do stawu, żeby jak najszybciej pomóc dziecku. Czy w
+  tej sytuacji musieliśmy najpierw wyobrazić sobie jak to dziecko się
+  czuje tonąc? Nie, zrobilibyśmy po prostu to co wydaje się słuszne w
+  tej sytuacji. Jest to tzw. reguła łatwego ratunku (the rule of easy
+  rescue). Jeśli możemy pomóc niewielkim kosztem – powinniśmy to
+  zrobić. Złe byłoby nie zareagowanie w tej sytuacji. Nie
+  potrzebujemy empatii do tego, aby wiedzieć co jest słuszne.
+</p>
 
-          <!-- TODO replace with class on the element above -->
-          <br />
-          <br />
+<p>
+  Autor książki porównuje empatię do reflektora, który ma ograniczony
+  obszar, na którym skupia uwagę. Skupia się na konkretnych ludziach,
+  tu i teraz. Empatia zaburza długofalowe patrzenie na konsekwencje
+  naszych działań a także skupia się na pojedynczych jednostkach
+  zamiast na większych grupach, źle radzi sobie w świecie, gdzie jest
+  wiele potrzebujących.
+</p>
 
-          <p>
-            Wydaje się, że empatia jest nieodłącznym elementem moralności i to
-            ona popycha nas do pomagania innym. Natomiast profesor Paul Bloom w
-            swojej najnowszej książce „Przeciw Empatii. Argumenty za
-            Racjonalnym Współczuciem” wprost przeciwstawia się empatii
-            wykazując, że może ona wręcz przeszkadzać w pomaganiu a także, że
-            bez empatii moglibyśmy czynić więcej dobra. W poniższym artykule
-            chciałabym przedstawić argumenty za takim podejściem, które ma na
-            celu nie tylko podważyć znaczenie empatii, ale także wspierać
-            świadomą, rozważną refleksję w życiu codziennym.
-          </p>
+<p>
+  Na poparcie tej tezy Peter Singer przytacza przykład badania
+  przeprowadzonego przez Paula Slovica na grupie studentów. Studenci
+  zostali poinformowani, że za wypełnienie kwestionariusza, które
+  zajmie około 20 minut dostaną 15 dolarów. Po jego wypełnieniu mieli
+  go przekazać asystentowi, który wyda im pieniądze. W tym momencie
+  zaczyna się właściwa część eksperymentu. Wraz z pieniędzmi
+  uczestnicy eksperymentu dostają ulotkę informującą, że to
+  centrum badawcze co miesiąc wspiera inną organizację charytatywną,
+  a w tym miesiącu jest to organizacja, która pomaga dzieciom
+  dotkniętym ubóstwem w Malawi. Jeśli chcieliby wesprzeć tę
+  inicjatywę to mogą wrzucić do puszki obok trochę datków. W
+  zależności od tego, w której z dwóch grup znalazła się osoba badana
+  dostała albo ulotkę z informacjami na temat organizacji i
+  statystykami odnośnie ubóstwa w tym kraju, bądź zdjęcie 7-letniej
+  dziewczynki o imieniu Rokia, która opisuje swoją sytuację i prosi o
+  pomoc. Jak się pewnie domyślacie więcej pieniędzy uzbierano z
+  datków przekazanych przez osoby, które dostały ulotkę z historią
+  małej dziewczynki.
+</p>
 
-          <p>
-            Na początku musimy wyjaśnić o czym mówimy myśląc o empatii. Termin
-            jest mocno rozbudowany i często używany bardzo szeroko. To nad czym
-            faktycznie chcemy się skupić to tzw. empatia emocjonalna – czyli
-            współodczuwanie, widzę i odczuwam twój ból czy inaczej doświadczam
-            tego co, jak sądzę ty doświadczasz.  Jest ona inna niż tzw. empatia
-            poznawcza – czyli to, że rozumiem co ty czujesz jednak
-            niekoniecznie ja czuję to samo.
-          </p>
+<p>
+  Kolejny przykład przytacza Paul Bloom opisując eksperyment
+  przeprowadzony przez C. Daniel Batson wraz z zespołem. W
+  eksperymencie naukowcy opowiedzieli osobom badanym o 10-letniej
+  dziewczynce Sheri Summers, czekającej wraz z innymi dziećmi w
+  kolejce na terapię. Później zostali poinformowani, że mogą
+  przenieść Sheri na początek kolejki. Dodatkowo w jednej grupie
+  osoby badane zostały poproszone o wyobrażenie sobie jak czuje się
+  ta dziewczynka. Pod koniec eksperymentu badanych pytano czy Sheri
+  ma być przeniesiona na początek kolejki. Zgodzili się na to tylko
+  Ci, którzy mieli „wejść w jej skórę”, natomiast pozostali
+  powiedzieli, że musi czekać, ponieważ przed nią są także inne
+  dzieci, które także potrzebują pomocy.
+</p>
 
-          <p>
-            Kolejnym elementem, któremu należy się przyjrzeć jest założenie, że
-            empatia jest fundamentem moralności. Bloom zauważa, że jest wiele
-            czynów, które uznajemy za niewłaściwe pomimo tego, że nie
-            pozostawiają po sobie wyraźnych ofiar. Nie pochwalamy osób, które
-            rzucają śmieci na chodnik czy oszukują w zeznaniach podatkowych
-            pomimo tego, że nie ponosi tu szkody żadna konkretna osoba. Inny
-            przykład podaje profesor Peter Singer odnosząc się do często
-            używanego przez niego przykładu z dzieckiem, które topi się w
-            stawie. Gdybyśmy byli świadkami takiej sytuacji prawdopodobnie
-            wskoczyli byśmy do stawu, żeby jak najszybciej pomóc dziecku. Czy w
-            tej sytuacji musieliśmy najpierw wyobrazić sobie jak to dziecko się
-            czuje tonąc? Nie, zrobilibyśmy po prostu to co wydaje się słuszne w
-            tej sytuacji. Jest to tzw. reguła łatwego ratunku (the rule of easy
-            rescue). Jeśli możemy pomóc niewielkim kosztem – powinniśmy to
-            zrobić. Złe byłoby nie zareagowanie w tej sytuacji. Nie
-            potrzebujemy empatii do tego, aby wiedzieć co jest słuszne.
-          </p>
+<p>
+  Oba badania pokazują, jaki wpływ na podejmowane przez nas decyzję
+  mają emocje. Jednak nie trzeba daleko szukać – jesteśmy w czasie
+  rozliczania podatków, gdzie możemy także przekazać nasz 1% na
+  wsparcie działań organizacji pożytku publicznego. W mediach
+  społecznościowych pojawia się obecnie masa opisanych historii
+  konkretnych osób, którym możemy pomóc. Nawet największe organizacje
+  takie jak np. UNICEF w swoich przekazach bazują na zdjęciach
+  konkretnych osób niż danych statystycznych. Nie przypominam sobie
+  wpisu, który zamiast przedstawiać sylwetki osób, bazował by
+  jedynie na opisie działań, na których skupia się dana organizacja,
+  podając fakty i liczby, nie odnosząc się do naszych emocji.
+</p>
 
-          <p>
-            Autor książki porównuje empatię do reflektora, który ma ograniczony
-            obszar, na którym skupia uwagę. Skupia się na konkretnych ludziach,
-            tu i teraz. Empatia zaburza długofalowe patrzenie na konsekwencje
-            naszych działań a także skupia się na pojedynczych jednostkach
-            zamiast na większych grupach, źle radzi sobie w świecie, gdzie jest
-            wiele potrzebujących.
-          </p>
+<p>
+  Ponadto jak wspomniałam wcześniej, empatia skupia się na tu i
+  teraz, często pomijając wpływ naszych działań w przyszłości. Nie
+  pomaga nam w planowaniu długoterminowych celów, dalszej perspektywy
+  czy odroczonej gratyfikacji.  Jako przykład weźmy nasze dzieci.
+  Gdybyśmy kierowali się zawsze empatią, czyli współodczuwaniem, gdy
+  dziecko chce np. słodycze. To chcielibyśmy, aby w tej konkretnej
+  chwili nie czuło się źle więc podarowalibyśmy mu cukierki. W
+  momencie, kiedy włączymy racjonalne podejmowanie decyzji odmówimy
+  dziecku słodyczy, wiedząc, że to da pozytywny efekt w przyszłości.
+  Innym bardziej przykrym przykładem są dzieci, które żebrzą. Często
+  dajemy im pieniądze nie zastanawiając się nad tym, że takim
+  działaniem, wspieramy ten proceder wykorzystywania dzieci do
+  zbierania pieniędzy.
+</p>
 
-          <p>
-            Na poparcie tej tezy Peter Singer przytacza przykład badania
-            przeprowadzonego przez Paula Slovica na grupie studentów. Studenci
-            zostali poinformowani, że za wypełnienie kwestionariusza, które
-            zajmie około 20 minut dostaną 15 dolarów. Po jego wypełnieniu mieli
-            go przekazać asystentowi, który wyda im pieniądze. W tym momencie
-            zaczyna się właściwa część eksperymentu. Wraz z pieniędzmi
-            uczestnicy eksperymentu dostają ulotkę informującą, że to
-            centrum badawcze co miesiąc wspiera inną organizację charytatywną,
-            a w tym miesiącu jest to organizacja, która pomaga dzieciom
-            dotkniętym ubóstwem w Malawi. Jeśli chcieliby wesprzeć tę
-            inicjatywę to mogą wrzucić do puszki obok trochę datków. W
-            zależności od tego, w której z dwóch grup znalazła się osoba badana
-            dostała albo ulotkę z informacjami na temat organizacji i
-            statystykami odnośnie ubóstwa w tym kraju, bądź zdjęcie 7-letniej
-            dziewczynki o imieniu Rokia, która opisuje swoją sytuację i prosi o
-            pomoc. Jak się pewnie domyślacie więcej pieniędzy uzbierano z
-            datków przekazanych przez osoby, które dostały ulotkę z historią
-            małej dziewczynki.
-          </p>
+<p>
+  Z przykrością muszę stwierdzić, że powyższe przykłady adresują duży
+  problem jakim jest walka z ubóstwem i działania organizacji
+  charytatywnych. Kierując się emocjami wyłączamy racjonalne
+  myślenie. I tak czym jest 5,6 miliona dzieci poniżej 5 roku życia,
+  które każdego roku umiera z powodu braku możliwości zaspokojenia
+  podstawowych potrzeb w zderzeniu z jedną małą słodką dziewczynką,
+  która zbiera pieniądze na terapię, aby móc kolejne święta spędzić z
+  rodziną? Statystyka jest tutaj bezsilna. Jednak czy tak faktycznie
+  jest? Czy jesteśmy niewolnikami naszych emocji? Badania także
+  wykazały, że częściej reagujemy emocjonalnie w stosunku do osób,
+  które są do nas podobne, czy, że osoby atrakcyjne częściej dostają
+  wymarzoną pracę. Jednak to może prowadzić do rasizmu i
+  dyskryminacji. Czy będąc świadomym naszych ograniczeń nie
+  powinniśmy świadomie starać się je omijać? Podobną analogię
+  pokazuje Daniel Kahneman w swojej książce „Pułapki myślenia. O
+  myśleniu szybkim i wolnym” wykazuje on szereg procesów, w których
+  nasz mózg „nas oszukuje”. Po przeczytaniu tej książki nie zmienimy
+  tego, nadal będziemy narażeni na te same pułapki. Jednak wiedząc o
+  tym jakie są nasze ograniczenia możemy im się świadomie
+  przeciwstawiać i nimi manipulować.
+</p>
 
-          <p>
-            Kolejny przykład przytacza Paul Bloom opisując eksperyment
-            przeprowadzony przez C. Daniel Batson wraz z zespołem. W
-            eksperymencie naukowcy opowiedzieli osobom badanym o 10-letniej
-            dziewczynce Sheri Summers, czekającej wraz z innymi dziećmi w
-            kolejce na terapię. Później zostali poinformowani, że mogą
-            przenieść Sheri na początek kolejki. Dodatkowo w jednej grupie
-            osoby badane zostały poproszone o wyobrażenie sobie jak czuje się
-            ta dziewczynka. Pod koniec eksperymentu badanych pytano czy Sheri
-            ma być przeniesiona na początek kolejki. Zgodzili się na to tylko
-            Ci, którzy mieli „wejść w jej skórę”, natomiast pozostali
-            powiedzieli, że musi czekać, ponieważ przed nią są także inne
-            dzieci, które także potrzebują pomocy.
-          </p>
+<p>
+  Oczywiście nie jest to łatwe, jeśli jednak naprawdę zależy nam na
+  czynieniu jak najwięcej dobra powinniśmy postawić na racjonalne
+  myślenie. Na ile to potrafi być ciężkie świetnie obrazuje sytuacja
+  opisana przez Janinę Ochojską w wywiadzie dla Gazety Wyborczej.
+  Opowiada w nim o jednej z najcięższych sytuacji w jakich brała
+  udział w całej swojej karierze. Podczas akcji humanitarnej w
+  Sarajewie, gdy wraz z konwojem wracali do Polski do samochodu
+  weszła kobieta z chłopcem i dwiema walizkami błagająca, aby ją
+  wywieźć z kraju. Ochojska podjęła bardzo trudną decyzję, na którą
+  zapewne wielu z nas nigdy by się nie zdecydowało, wyprosiła tę
+  kobietę z samochodu i odjechała. Gdyby ją zostawiła i zostałaby
+  znaleziona na jednym z serbskich posterunków to PAH już nigdy nie
+  miałby wstępu do tego kraju. To było zbyt duże ryzyko dla całej
+  akcji humanitarnej.
+</p>
 
-          <p>
-            Oba badania pokazują, jaki wpływ na podejmowane przez nas decyzję
-            mają emocje. Jednak nie trzeba daleko szukać – jesteśmy w czasie
-            rozliczania podatków, gdzie możemy także przekazać nasz 1% na
-            wsparcie działań organizacji pożytku publicznego. W mediach
-            społecznościowych pojawia się obecnie masa opisanych historii
-            konkretnych osób, którym możemy pomóc. Nawet największe organizacje
-            takie jak np. UNICEF w swoich przekazach bazują na zdjęciach
-            konkretnych osób niż danych statystycznych. Nie przypominam sobie
-            wpisu, który zamiast przedstawiać sylwetki osób, bazował by
-            jedynie na opisie działań, na których skupia się dana organizacja,
-            podając fakty i liczby, nie odnosząc się do naszych emocji.
-          </p>
+<p>
+  Na koniec zamieszczam, krótkie fragmenty z tego wywiadu, które,
+  według mnie, opisują całą istotę prawdziwego efektywnego pomagania:
+</p>
 
-          <p>
-            Ponadto jak wspomniałam wcześniej, empatia skupia się na tu i
-            teraz, często pomijając wpływ naszych działań w przyszłości. Nie
-            pomaga nam w planowaniu długoterminowych celów, dalszej perspektywy
-            czy odroczonej gratyfikacji.  Jako przykład weźmy nasze dzieci.
-            Gdybyśmy kierowali się zawsze empatią, czyli współodczuwaniem, gdy
-            dziecko chce np. słodycze. To chcielibyśmy, aby w tej konkretnej
-            chwili nie czuło się źle więc podarowalibyśmy mu cukierki. W
-            momencie, kiedy włączymy racjonalne podejmowanie decyzji odmówimy
-            dziecku słodyczy, wiedząc, że to da pozytywny efekt w przyszłości.
-            Innym bardziej przykrym przykładem są dzieci, które żebrzą. Często
-            dajemy im pieniądze nie zastanawiając się nad tym, że takim
-            działaniem, wspieramy ten proceder wykorzystywania dzieci do
-            zbierania pieniędzy.
-          </p>
+<blockquote>
+  Wyborcza (GW): Sumienie też ważne.
+  <br>
+  Janina Ochojska: Ważne, żeby pomagać, a nie załatwiać sobie spokój
+  sumienia.
+  <br>
+  (…)
+  <br>
+  GW: Czy w ten sposób załatwiasz coś sobie psychologicznie?
+  <br>
+  JO: Tak. Chyba tak. Poczucie bycia potrzebną. Gdybym się czuła
+  niepotrzebna, byłaby to dla mnie sytuacja bardzo trudna
+  psychicznie. Natomiast na pewno nie załatwiam sobie spokojnego
+  sumienia. Bo pomaganie to jest selekcja, wybór. Czasem okrutny.
+</blockquote>
 
-          <p>
-            Z przykrością muszę stwierdzić, że powyższe przykłady adresują duży
-            problem jakim jest walka z ubóstwem i działania organizacji
-            charytatywnych. Kierując się emocjami wyłączamy racjonalne
-            myślenie. I tak czym jest 5,6 miliona dzieci poniżej 5 roku życia,
-            które każdego roku umiera z powodu braku możliwości zaspokojenia
-            podstawowych potrzeb w zderzeniu z jedną małą słodką dziewczynką,
-            która zbiera pieniądze na terapię, aby móc kolejne święta spędzić z
-            rodziną? Statystyka jest tutaj bezsilna. Jednak czy tak faktycznie
-            jest? Czy jesteśmy niewolnikami naszych emocji? Badania także
-            wykazały, że częściej reagujemy emocjonalnie w stosunku do osób,
-            które są do nas podobne, czy, że osoby atrakcyjne częściej dostają
-            wymarzoną pracę. Jednak to może prowadzić do rasizmu i
-            dyskryminacji. Czy będąc świadomym naszych ograniczeń nie
-            powinniśmy świadomie starać się je omijać? Podobną analogię
-            pokazuje Daniel Kahneman w swojej książce „Pułapki myślenia. O
-            myśleniu szybkim i wolnym” wykazuje on szereg procesów, w których
-            nasz mózg „nas oszukuje”. Po przeczytaniu tej książki nie zmienimy
-            tego, nadal będziemy narażeni na te same pułapki. Jednak wiedząc o
-            tym jakie są nasze ograniczenia możemy im się świadomie
-            przeciwstawiać i nimi manipulować.
-          </p>
+<p>
+  Źródła:
+  <ol>
+    <li>
+      P. Bloom, Przeciw Empatii. Argumenty za Racjonalnym Współczuciem, Kielce 2017.
+    </li>
+    <li>
+      <a href="http://www.childmortality.org/files_v21/download/IGME%20report%202017%20child%20mortality%20final.pdf">
+        L. Hug, D. Sharrow, D. You, Levels & Trends in Child Mortality
+        Report 2017, 19 października 2017 (dostęp: 20.02.2018 r.)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.coursera.org/learn/altruism">
+        p. Singer, Effective Altruism (dostęp: 20.02.2018 r.)
+      </a>
+    </li>
+    <li>
+      <a href="http://journal.sjdm.org/7303a/jdm7303a.htm">
+        P. Slovic, If I look at the mass I will never act": Psychic
+        numbing and genocide, 2 kwietnia 2007 (dostęp: 20.02.2018 r.)
+      </a>
+    </li>
+    <li>
+      <a href="http://wyborcza.pl/duzyformat/1,127290,16438335,Janina_Ochojska__Czy_jestes_dobrym_czlowiekiem_.html">
+        G. Sroczyński, Janina Ochojska. Czy jesteś dobrym człowiekiem?,
+        7 sierpnia 2014 (dostęp: 20.02.2018 r.)
+      </a>
+    </li>
+  </ol>
+</p>
 
-          <p>
-            Oczywiście nie jest to łatwe, jeśli jednak naprawdę zależy nam na
-            czynieniu jak najwięcej dobra powinniśmy postawić na racjonalne
-            myślenie. Na ile to potrafi być ciężkie świetnie obrazuje sytuacja
-            opisana przez Janinę Ochojską w wywiadzie dla Gazety Wyborczej.
-            Opowiada w nim o jednej z najcięższych sytuacji w jakich brała
-            udział w całej swojej karierze. Podczas akcji humanitarnej w
-            Sarajewie, gdy wraz z konwojem wracali do Polski do samochodu
-            weszła kobieta z chłopcem i dwiema walizkami błagająca, aby ją
-            wywieźć z kraju. Ochojska podjęła bardzo trudną decyzję, na którą
-            zapewne wielu z nas nigdy by się nie zdecydowało, wyprosiła tę
-            kobietę z samochodu i odjechała. Gdyby ją zostawiła i zostałaby
-            znaleziona na jednym z serbskich posterunków to PAH już nigdy nie
-            miałby wstępu do tego kraju. To było zbyt duże ryzyko dla całej
-            akcji humanitarnej.
-          </p>
-
-          <p>
-            Na koniec zamieszczam, krótkie fragmenty z tego wywiadu, które,
-            według mnie, opisują całą istotę prawdziwego efektywnego pomagania:
-          </p>
-
-          <blockquote>
-            Wyborcza (GW): Sumienie też ważne.
-            <br>
-            Janina Ochojska: Ważne, żeby pomagać, a nie załatwiać sobie spokój
-            sumienia.
-            <br>
-            (…)
-            <br>
-            GW: Czy w ten sposób załatwiasz coś sobie psychologicznie?
-            <br>
-            JO: Tak. Chyba tak. Poczucie bycia potrzebną. Gdybym się czuła
-            niepotrzebna, byłaby to dla mnie sytuacja bardzo trudna
-            psychicznie. Natomiast na pewno nie załatwiam sobie spokojnego
-            sumienia. Bo pomaganie to jest selekcja, wybór. Czasem okrutny.
-          </blockquote>
-
-          <p>
-            Źródła:
-            <ol>
-              <li>
-                P. Bloom, Przeciw Empatii. Argumenty za Racjonalnym Współczuciem, Kielce 2017.
-              </li>
-              <li>
-                <a href="http://www.childmortality.org/files_v21/download/IGME%20report%202017%20child%20mortality%20final.pdf">
-                  L. Hug, D. Sharrow, D. You, Levels & Trends in Child Mortality
-                  Report 2017, 19 października 2017 (dostęp: 20.02.2018 r.)
-                </a>
-              </li>
-              <li>
-                <a href="https://www.coursera.org/learn/altruism">
-                  p. Singer, Effective Altruism (dostęp: 20.02.2018 r.)
-                </a>
-              </li>
-              <li>
-                <a href="http://journal.sjdm.org/7303a/jdm7303a.htm">
-                  P. Slovic, If I look at the mass I will never act": Psychic
-                  numbing and genocide, 2 kwietnia 2007 (dostęp: 20.02.2018 r.)
-                </a>
-              </li>
-              <li>
-                <a href="http://wyborcza.pl/duzyformat/1,127290,16438335,Janina_Ochojska__Czy_jestes_dobrym_czlowiekiem_.html">
-                  G. Sroczyński, Janina Ochojska. Czy jesteś dobrym człowiekiem?,
-                  7 sierpnia 2014 (dostęp: 20.02.2018 r.)
-                </a>
-              </li>
-            </ol>
-          </p>
-
-          <hr>
-          <p>
-            Masz do nas pytanie? Chcesz się czymś podzielić?
-            <a href="{{ base_url }}napisz-do-nas.html" class="link">Napisz do nas</a> lub
-            udostępnij wpis w mediach społecznościowych i zacznij dyskusję!
-          </p>
-        </article>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-{% endblock content %}
+{% endblock %}

@@ -5,8 +5,8 @@
 {% block content %}
 
 <section class="section-padding-top blog-list">
-  
-  {% for post in blogPosts %}
+
+  {% for id, post in blogPosts %}
 
   <article class="{% if loop.index % 2 == 1 %} background {% endif %} border-bottom ">
     <div class="container-fluid page-container">
@@ -31,4 +31,4 @@
 </section>
 
 
-{% endblock content %}
+{% endblock %}
