@@ -5,6 +5,8 @@ var reload = browserSync.reload;
 var nunjucksRender = require('gulp-nunjucks-render');
 var pump = require('pump');
 var fs = require('fs');
+var wrapper = require('gulp-wrapper');
+var filter = require('gulp-filter');
 
 const PATHS = {
     output: 'dist',
@@ -13,6 +15,8 @@ const PATHS = {
 };
 
 const blogPosts = JSON.parse(fs.readFileSync('src/blog-posts.json', 'utf8'));
+const blogIds = {};
+for(let id in blogPosts) blogIds[blogPosts[id].path] = id;
 
 gulp.task('styles', function () {
     var processors = [
@@ -32,7 +36,25 @@ gulp.task('styles', function () {
 });
 
 gulp.task('templates', function() {
-    return gulp.src(PATHS.pages + '/**/*.+(html|js|css)')
+    let post_filter = filter('**/blog/*', { restore: true });
+
+    return gulp.src(PATHS.pages + '/**/*.+(html|js|css|md)')
+        .pipe(post_filter)
+        .pipe(wrapper({
+            header: function(file) {
+                let post_id = blogIds[file.path.match(/.*(blog\/.*)$/)[1]];
+                if(!post_id) console.log(`Error: No post with path ${file.path} has been registered in blog-posts.json!`);
+
+                return `
+                {% extends "blog.html" %}
+                {% set post_id = "${post_id}" %}
+                {% block postcontent %}
+                `
+            },
+            footer: '{% endblock %}'
+        }))
+        .pipe(post_filter.restore)
+
         .pipe(nunjucksRender({
             path: [PATHS.templates],
             watch: true,
@@ -84,5 +106,3 @@ gulp.task('dev', function () {
 
 //default task to be run with gulp
 gulp.task('default', ['styles' ,'scripts', 'copy', 'templates']);
-
-
