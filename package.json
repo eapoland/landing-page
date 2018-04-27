@@ -1,17 +1,17 @@
 {
   "version": "1.2.0",
   "devDependencies": {
-    "autoprefixer": "^7.1.4",
-    "browser-sync": "^2.18.13",
+    "autoprefixer": "^7.2.6",
+    "browser-sync": "^2.23.7",
     "gulp": "^3.9.1",
     "gulp-filter": "^5.1.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-markdown": "^2.0.1",
     "gulp-minify-css": "^1.2.4",
-    "gulp-nunjucks-render": "^2.2.1",
-    "gulp-postcss": "^7.0.0",
+    "gulp-nunjucks-render": "^2.2.2",
+    "gulp-postcss": "^7.0.1",
     "gulp-rename": "^1.2.2",
-    "gulp-sass": "^3.1.0",
+    "gulp-sass": "^3.2.1",
     "gulp-size": "^2.1.0",
     "gulp-uglify": "^3.0.0",
     "gulp-wrapper": "^1.0.0",
@@ -19,10 +19,10 @@
     "normalize.css": "^7.0.0",
     "pixrem": "^4.0.1",
     "postcss-opacity": "^5.0.0",
-    "pump": "^1.0.2",
-    "rxjs": "^5.5.6",
-    "sass-lint": "^1.11.1",
-    "shelljs": "^0.8.0"
+    "pump": "^1.0.3",
+    "rxjs": "^5.5.10",
+    "sass-lint": "^1.12.1",
+    "shelljs": "^0.8.1"
   },
   "scripts": {
     "build": "gulp",
