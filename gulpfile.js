@@ -93,6 +93,7 @@ gulp.task('scripts', function (cb) {
 gulp.task('copy', function() {
     gulp.src(['src/fonts/**/*']).pipe(gulp.dest('dist/fonts'));
     gulp.src(['src/images/**/*']).pipe(gulp.dest('dist/images'));
+    gulp.src(['src/CNAME']).pipe(gulp.dest('dist'));
 });
 
 gulp.task('dev', function () {
