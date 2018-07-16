@@ -1,27 +1,40 @@
 <footer class="background">
-    <div class="container-fluid page-container page-footer">
-        <div class="row">
-            <div class="col-12 col-md-6 d-none d-md-block">
-                <ul class="list-unstyled footer-menu">
-                    <li><a href="https://www.thelifeyoucansave.org/impact-calculator" target="_blank">Policz osiągnięte dobro</a></li>
-                    <li><a href="https://drive.google.com/drive/folders/10TgWw_2vMKzcbRUn1HpMsqgmwoW9Dy0l?usp=sharing" target="_blank">Materiały dla mediów</a></li>
-                    <li><a href="{{ base_url }}napisz-do-nas.html">Napisz do nas</a></li>
-                </ul>
-            </div>
-            <div class="col-12 col-md-6 align-self-end text-right page-footer__copyright">
+  <div class="page-container page-footer">
+    <div class="flex">
+      <div class="footer left">
+        <p>
+          Fundacja Efektywny Altruizm
+          <br />
+          Plac Bankowy 2, 00-095 Warszawa
+          <br />
+          KRS: 0000726237, REGON: 369951399, NIP: 5252746902
+          <br />
+          67 1050 1012 1000 0090 8040 3265
+        </p>
+      </div>
 
-              <p>
-                Design: Agnieszka Pisz <span class="d-none d-md-inline">/</span> <br class="d-md-none"/> Development:
-                Adrian Andrzejewski, Marcin Wosinek
-              </p>
-              <a href="https://guideme24.pl/privacy-policy/1041" class="guide-embed guide-color-0 guide-branded guide-button-policy" title="Polityka Prywatności" onclick="TINY.box.show({iframe:'https://guideme24.pl/privacy-policy/1041',boxid:'frameless',width:760,height:450,fixed:false}); return false;">Polityka Prywatności</a>
-              <script type="text/javascript">
-                (function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0];
-                 s.src = "https://guideme24.pl/privacy-policy/client.js"; tag.parentNode.insertBefore(s,tag);};
-                 if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}
-                 else{w.onload = loader;}})(window, document);
-              </script>
-            </div>
-        </div>
+      <div class="footer center">
+        <a href="https://guideme24.pl/privacy-policy/1041" class="guide-embed guide-color-0 guide-branded guide-button-policy" title="Polityka Prywatności" onclick="TINY.box.show({iframe:'https://guideme24.pl/privacy-policy/1041',boxid:'frameless',width:760,height:450,fixed:false}); return false;">Polityka Prywatności</a>
+        <script type="text/javascript">
+          (function (w,d) {var loader = function () {var s = d.createElement("script"), tag = d.getElementsByTagName("script")[0];
+           s.src = "https://guideme24.pl/privacy-policy/client.js"; tag.parentNode.insertBefore(s,tag);};
+           if(w.addEventListener){w.addEventListener("load", loader, false);}else if(w.attachEvent){w.attachEvent("onload", loader);}
+           else{w.onload = loader;}})(window, document);
+        </script>
+      </div>
+
+      <div class="footer right">
+        <ul class="footer-menu">
+          <li><a href="https://drive.google.com/drive/folders/10TgWw_2vMKzcbRUn1HpMsqgmwoW9Dy0l?usp=sharing" target="_blank">Materiały dla mediów</a></li>
+          <li><a href="{{ base_url }}napisz-do-nas.html">Napisz do nas</a></li>
+        </ul>
+      </div>
     </div>
+
+    <div class="footer-small">
+      <p>
+        Design & Dev: Agnieszka Pisz, Adrian Andrzejewski, Marcin Wosinek
+      </p>
+    </div>
+  </div>
 </footer>
