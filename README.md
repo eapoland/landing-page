@@ -34,4 +34,9 @@ npm run serve
 
 # Content ideas
 
-the content ideas are managed on https://trello.com/b/Cxeoqkqu/treści-na-stronę
+the content ideas are managed on https://app.asana.com/0/734282938557938/board
+
+# Branch build
+
+Each branch is build & deployed to:
+http://efektywnyaltruizm.org.s3-website.eu-central-1.amazonaws.com/
