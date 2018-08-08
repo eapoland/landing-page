@@ -18,58 +18,83 @@
 
 // zaangazowani
 .section-team {
-    max-height: 290px;
-    overflow: hidden;
-    position: relative;
-    transition: max-height 0.25s ease-out;
-    padding: 20px 0 40px;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 
     @include media-breakpoint-up(md) {
-        max-height: 345px;
-        padding-bottom: 20px;
+      justify-content: left;
     }
 }
 
-.show-more-less {
-    position: absolute;
-    bottom: 0;
-    text-align: center;
-    left: 0;
-    right: 0;
-    z-index: 3;
+.person {
+  flex-direction: column;
+  display: flex;
+  justify-content: top;
+  align-items: stretch;
+  width: 20%;
+  min-width: 113px;
+  text-align: center;
+  padding-bottom: 16px;
+
+  h3 {
+    font-weight: bold;
+    margin-bottom: 4px;
+  }
+
+  &__desc {
     font-size: 14px;
-    font-weight: 700;
-    color: rgba(11, 145, 170, .58);
-    text-transform: uppercase;
-    cursor: pointer;
-    padding-bottom: 8px;
-    padding-top: 8px;
-    background-color: #fff;
-    background-image: linear-gradient(to right, rgb(167, 215, 224) 65%, white 35%);
-    background-position: left bottom;
-    background-repeat: repeat-x;
-    background-size: 20px 3px;
-
-    .icon-arrow {
-        padding: 0 10px;
-    }
-}
-
-.show-less {
     display: none;
-}
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: $secondary;
+    padding: 4px;
+    margin-bottom: 4px;
+  }
 
-.section-team--expanded {
-    max-height: 1500px !important;
-    transition: max-height 0.25s ease-in;
+  &__desc--small {
+    font-size: 13px;
+  }
 
-    .show-less {
-        display: block;
+  &__wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  &__wrapper:hover &__desc {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  &__img {
+    border-radius: 50%;
+    max-width: 97px;
+    max-height: 97px;
+
+    @include media-breakpoint-up(md) {
+      max-width: 132px;
+      max-height: 132px;
     }
+  }
 
-    .show-more {
-        display: none;
+  p {
+    margin-bottom: 8px;
+  }
+
+  &__icon {
+    img {
+      width: 32px;
+      height: 32px;
+      margin: 4px 12px 0;
     }
+  }
 }
 
 [data-toggle="collapse"] {
@@ -114,80 +139,6 @@
   height: 0;
   overflow: hidden;
   transition: height .35s ease;
-}
-
-.team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-
-    @include media-breakpoint-up(md) {
-      justify-content: left;
-    }
-}
-
-.person {
-    width: 145px;
-    height: 140px;
-    position: relative;
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    @include media-breakpoint-up(md) {
-        width: 186px;
-        height: 195px;
-    }
-}
-
-.person__img {
-    border-radius: 50%;
-    width: 97px;
-    height: 97px;
-
-    @include media-breakpoint-up(md) {
-        width: 132px;
-        height: 132px;
-    }
-}
-
-.person__name {
-    color: $primary;
-    text-align: center;
-}
-
-.person__desc {
-    position: absolute;
-    top: -10px;
-    right: -15px;
-    bottom: -10px;
-    left: -15px;
-    padding: 10px;
-    background-color: $secondary;
-    font-size: 12px;
-    text-align: center;
-    z-index: 2;
-    opacity: 0;
-    transition: opacity 500ms;
-    cursor: default;
-    display: flex;
-    align-items: center;
-
-    @include media-breakpoint-up(md) {
-        font-size: 14px;
-        top: 0;
-        right: -10px;
-        bottom: 0;
-        left: -10px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-    }
-
-    .person:active &,
-    .person:hover & {
-        opacity: 1;
-    }
 }
 
 //Dołącz do nas section
