@@ -64,6 +64,8 @@
 
 // Media of at most the maximum breakpoint width. No query for the largest breakpoint.
 // Makes the @content apply to the given breakpoint and narrower.
+// TODO fix for calling with sm, right now it's throwing some issues in functions
+// down the line
 @mixin media-breakpoint-down($name, $breakpoints: $grid-breakpoints) {
   $max: breakpoint-max($name, $breakpoints);
   @if $max {
