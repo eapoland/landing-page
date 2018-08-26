@@ -2,7 +2,21 @@
     #COMMUNITY PAGE
 \*------------------------------------*/
 
-//zaangazowani
+// napisz do nas
+.contact-us {
+  margin-top: 16px;
+  text-align: center;
+
+  h2, p {
+    margin: 24px 0;
+  }
+
+  .button {
+    margin: 8px 0 24px;
+  }
+}
+
+// zaangazowani
 .section-team {
     max-height: 290px;
     overflow: hidden;
