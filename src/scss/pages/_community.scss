@@ -144,7 +144,6 @@
     h2 {
         @include media-breakpoint-up(md) {
             display: inline-block;
-            border-bottom: 3px solid $primary;
             margin-bottom: 45px;
         }
     }
