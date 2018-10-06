@@ -11,6 +11,9 @@ function setViewportSize(size) {
   browser.executeScript(JS_GET_PADDING).then(function(pad){
     browser.manage().window().setSize(size.width + pad.w, size.height + pad.h);
   });
+
+  // Set the position to hash
+  browser.driver.navigate().refresh();
 };
 
 var sizes = [
@@ -57,10 +60,14 @@ function saveScreenshot(note, size) {
   return screenShotPromise;
 };
 
-module.exports = function(note) {
+module.exports = function(positions) {
   sizes.forEach(function(size) {
-    setViewportSize(size);
+    positions.forEach(function(position) {
+      browser.driver.get(position.url);
 
-    saveScreenshot(note, size);
+      setViewportSize(size);
+
+      saveScreenshot(position.note, size);
+    });
   });
 };

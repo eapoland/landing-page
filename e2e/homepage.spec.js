@@ -1,4 +1,5 @@
-var screenshotEverything = require('./screenshot-everything.js');
+var screenshotEverything = require('./screenshot-everything.js'),
+  homepage = require('./homepage.js');
 
 describe('homepage', function() {
   beforeEach(function() {
@@ -6,8 +7,15 @@ describe('homepage', function() {
   });
 
   it('should screenshot everything', function() {
-    browser.driver.get('http://localhost:9000/');
-
-    screenshotEverything();
+    screenshotEverything([ {
+      note: 'top',
+      url: 'http://localhost:9000/'
+    }, {
+      note: 'second',
+      url: 'http://localhost:9000/#image-second'
+    }, {
+      note: 'third',
+      url: 'http://localhost:9000/#image-third'
+    }]);
   });
 });

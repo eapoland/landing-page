@@ -68,9 +68,9 @@
     }
 }
 
-.page-container [id]:before {
-    content:"";
-    display:block;
-    height: 106px; /* fixed header height*/
-    margin: -106px 0 0; /* negative fixed header height */
+a.anchor {
+  display: block;
+  position: relative;
+  top: -106px;
+  visibility: hidden;
 }

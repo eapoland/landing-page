@@ -33,6 +33,8 @@
   "scripts": {
     "build": "gulp",
     "e2e:prepare": "webdriver-manager update --gecko=false",
+    "e2e:add-screen": "xrandr --output LVDS1 --mode 1366x768 --fb 2000x3000 --panning 2000x3000",
+    "e2e:remove-screen": "xrandr -s 0",
     "e2e:run": "protractor e2e/protractor.conf.js",
     "e2e:ci": "npm-run-all e2e:ci:*",
     "e2e:ci:1": "npm-run-all -p e2e:ci:1:*",
