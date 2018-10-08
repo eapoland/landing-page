@@ -29,5 +29,7 @@
     "lint": "sass-lint -c .scss-lint.yml",
     "serve": "gulp dev"
   },
-  "dependencies": {}
+  "dependencies": {
+    "lodash": "^4.17.10"
+  }
 }
