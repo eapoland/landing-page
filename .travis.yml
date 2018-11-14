@@ -1,10 +1,15 @@
 language: node_js
 node_js:
-  - "6"
+  - "10"
 
 script:
+  - npm install
   - npm run lint
   - npm run build
+  - npm run e2e:prepare
+  - npm run e2e:ci
+  - ls e2e-screenshots
+  - cp e2e-screenshots -r dist
 
 deploy:
   - provider: s3

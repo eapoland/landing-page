@@ -1,3 +1,5 @@
+var puppeteer = require('puppeteer');
+
 exports.config = {
   directConnect: true,
 
@@ -7,6 +9,10 @@ exports.config = {
 
   capabilities: {
     browserName: 'chrome',
-    specs: ['*.spec.js']
+    specs: ['*.spec.js'],
+    chromeOptions: {
+      args: ['--headless', '--lang=en-Gb,en'],
+      binary: puppeteer.executablePath()
+    }
   }
 };
