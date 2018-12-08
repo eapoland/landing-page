@@ -1,23 +1,23 @@
 {
-    "post-3": {
-        "path": "blog/post-3.html",
-        "title": "Czy empatia zawsze jest dobra?",
-        "date": "17.03.2018",
-        "excerpt": "Wydaje się, że empatia jest nieodłącznym elementem moralności i to ona popycha nas do pomagania innym. Natomiast profesor Paul Bloom w swojej najnowszej książce „Przeciw Empatii. Argumenty za Racjonalnym Współczuciem” wprost przeciwstawia się empatii wykazując, że może ona wręcz &hellip;",
-        "info": "autor: Maria Gembarzewska-Truong"
-    },
-    "post-2": {
-        "path": "blog/post-2.html",
-        "title": "Dlaczego warto pomagać?",
-        "date": "20.01.2018",
-        "excerpt": "Na świecie obecnie żyje 7,5 miliarda ludzi z tego 10,7% (według danych Banku Światowego z 2011) żyje w skrajnym ubóstwie. O skrajnym ubóstwie mówimy wtedy gdy człowiek na przeżycie ma 1,9$ dziennie. Oczywiście możemy tu się spierać, że inaczej żyje się za taką kwotę w Europie niż np. w Azji. Natomiast Bank Światowy uwzględnia różnice w &hellip;",
-        "info": "autor: Maria Gembarzewska-Truong"
-    },
-    "post-1": {
-        "path": "blog/post-1.html",
-        "title": "Myśl jak efektywny altruista",
-        "date": "1.12.2017",
-        "excerpt": "Oto 5 kluczowych pytań, które zadaje efektywny altruizm.",
-        "info": "tłumaczenie: Justyna Ferenc | źródło oryginału: William MacAskill, \"Doing Good Better\""
-    }
+  "post-3": {
+    "path": "blog/post-3.html",
+    "title": "Czy empatia zawsze jest dobra?",
+    "date": "17.03.2018",
+    "excerpt": "Wydaje się, że empatia jest nieodłącznym elementem moralności i to ona popycha nas do pomagania innym. Natomiast profesor Paul Bloom w swojej najnowszej książce „Przeciw Empatii. Argumenty za Racjonalnym Współczuciem” wprost przeciwstawia się empatii wykazując, że może ona wręcz &hellip;",
+    "info": "autor: Maria Gembarzewska-Truong"
+  },
+  "post-2": {
+    "path": "blog/post-2.html",
+    "title": "Dlaczego warto pomagać?",
+    "date": "20.01.2018",
+    "excerpt": "Na świecie obecnie żyje 7,5 miliarda ludzi z tego 10,7% (według danych Banku Światowego z 2011) żyje w skrajnym ubóstwie. O skrajnym ubóstwie mówimy wtedy gdy człowiek na przeżycie ma 1,9$ dziennie. Oczywiście możemy tu się spierać, że inaczej żyje się za taką kwotę w Europie niż np. w Azji. Natomiast Bank Światowy uwzględnia różnice w &hellip;",
+    "info": "autor: Maria Gembarzewska-Truong"
+  },
+  "post-1": {
+    "path": "blog/post-1.html",
+    "title": "Myśl jak efektywny altruista",
+    "date": "1.12.2017",
+    "excerpt": "Oto 5 kluczowych pytań, które zadaje efektywny altruizm.",
+    "info": "tłumaczenie: Justyna Ferenc | źródło oryginału: William MacAskill, \"Doing Good Better\""
+  }
 }

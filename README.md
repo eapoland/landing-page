@@ -6,12 +6,14 @@ https://nodejs.org/es/download/
 Make sure you have yarn installed - https://yarnpkg.com/en/docs/install
 
 Then in project directory:
+
 ```
 yarn global add gulp-cli
 yarn install
 ```
 
 Compile project:
+
 ```
 gulp
 
@@ -20,11 +22,13 @@ npm run build
 ```
 
 Compile templates ony:
+
 ```
 gulp templates
 ```
 
 Edit mode
+
 ```
 gulp dev
 

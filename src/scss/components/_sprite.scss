@@ -19,12 +19,23 @@ $logo-height: 51px;
 $logo-total-width: 34px;
 $logo-total-height: 51px;
 $logo-image: '../images/sprite.png';
-$logo: (0px, 0px, 0px, 0px, 34px, 51px, 34px, 51px, '../images/sprite.png', 'logo', );
+$logo: (
+  0px,
+  0px,
+  0px,
+  0px,
+  34px,
+  51px,
+  34px,
+  51px,
+  '../images/sprite.png',
+  'logo'
+);
 $spritesheet-width: 34px;
 $spritesheet-height: 51px;
 $spritesheet-image: '../images/sprite.png';
-$spritesheet-sprites: ($logo, );
-$spritesheet: (34px, 51px, '../images/sprite.png', $spritesheet-sprites, );
+$spritesheet-sprites: ($logo);
+$spritesheet: (34px, 51px, '../images/sprite.png', $spritesheet-sprites);
 
 // The provided mixins are intended to be used with the array-like variables
 //
@@ -61,7 +72,7 @@ $spritesheet: (34px, 51px, '../images/sprite.png', $spritesheet-sprites, );
 @mixin sprite-position($sprite) {
   $sprite-offset-x: nth($sprite, 3);
   $sprite-offset-y: nth($sprite, 4);
-  background-position: $sprite-offset-x  $sprite-offset-y;
+  background-position: $sprite-offset-x $sprite-offset-y;
 }
 
 @mixin sprite-image($sprite) {

@@ -3,17 +3,17 @@
 //
 
 @at-root {
-    @-ms-viewport {
-        width: device-width;
-    }
+  @-ms-viewport {
+    width: device-width;
+  }
 }
 
 //
 // Grid mixins
 //
 
-@import "mixins/breakpoints";
-@import "mixins/grid-framework";
-@import "mixins/grid";
+@import 'mixins/breakpoints';
+@import 'mixins/grid-framework';
+@import 'mixins/grid';
 
-@import "grid";
+@import 'grid';

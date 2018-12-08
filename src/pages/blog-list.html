@@ -1,19 +1,21 @@
-{% extends "layout.html" %}
-
-{% set page = 'blog' %}
-
-{% block content %}
+{% extends "layout.html" %} {% set page = 'blog' %} {% block content %}
 
 <section class="section-padding-top blog-list">
-
   {% for id, post in blogPosts %}
 
-  <article class="{% if loop.index % 2 == 1 %} background {% endif %} border-bottom ">
+  <article
+    class="{% if loop.index % 2 == 1 %} background {% endif %} border-bottom "
+  >
     <div class="container-fluid page-container">
-        <div class="row section section__border {% if loop.index == 1 %} section__border--first {% endif %}">
+      <div
+        class="row section section__border {% if loop.index == 1 %} section__border--first {% endif %}"
+      >
         <div class="col-12 col-md-10">
           <h2>
-            <a href="{{ base_url }}{{ post.pub_path }}" class="border-bottom d-inline-block">
+            <a
+              href="{{ base_url }}{{ post.pub_path }}"
+              class="border-bottom d-inline-block"
+            >
               {{ post.title }}
             </a>
           </h2>
@@ -27,8 +29,6 @@
   </article>
 
   {% endfor %}
-
 </section>
-
 
 {% endblock %}

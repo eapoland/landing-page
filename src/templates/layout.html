@@ -1,84 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="icon" type="image/svg+xml" href="/images/logo.svg">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="icon" type="image/svg+xml" href="/images/logo.svg" />
 
     <title>
-        {% if title %}
-        {{ title }}
-        {% else %}
-        Efektywny Altruizm
-        {% endif %}
+      {% if title %} {{ title }} {% else %} Efektywny Altruizm {% endif %}
     </title>
 
     <meta property="og:title" content="Efektywny Altruizm" />
-    <meta property="og:description" content="Jesteśmy polską filią międzynarodowej społeczności Effective Altruism. Łączymy współczucie z dowodami naukowymi i racjonalnością, aby wytyczać najskuteczniejsze drogi poprawy świata, a potem nimi podążać." />
+    <meta
+      property="og:description"
+      content="Jesteśmy polską filią międzynarodowej społeczności Effective Altruism. Łączymy współczucie z dowodami naukowymi i racjonalnością, aby wytyczać najskuteczniejsze drogi poprawy świata, a potem nimi podążać."
+    />
     <meta property="og:image" content="{{ base_url }}images/logo.png" />
 
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,600,700|Open+Sans:400,600,700&amp;subset=latin-ext" rel="stylesheet">
-    <link rel="stylesheet" href="{{ base_url }}css/ea.min.css?v=1.0">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,600,700|Open+Sans:400,600,700&amp;subset=latin-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="{{ base_url }}css/ea.min.css?v=1.0" />
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
 
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="3c459020-234e-4f3d-b528-4ba4638d4349" type="text/javascript" async></script>
-</head>
+    <script
+      id="Cookiebot"
+      src="https://consent.cookiebot.com/uc.js"
+      data-cbid="3c459020-234e-4f3d-b528-4ba4638d4349"
+      type="text/javascript"
+      async
+    ></script>
+  </head>
 
-<body data-spy="scroll" data-target=".article-sidebar__menu" data-offset="106">
+  <body
+    data-spy="scroll"
+    data-target=".article-sidebar__menu"
+    data-offset="106"
+  >
+    {% include 'header.html' %}
 
-{% include 'header.html' %}
+    <main class="page-main">{% block content %} {% endblock %}</main>
 
-<main class="page-main">
+    {% include 'footer.html' %} {% block scripts %} {% endblock %}
+    <script src="js/ea.min.js"></script>
 
-    {% block content %}
-    {% endblock %}
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-113233960-1"
+    ></script>
+    <script type="text/javascript">
+      function CookiebotCallback_OnAccept() {
+        if (Cookiebot.consent.marketing) {
+          window.dataLayer = window.dataLayer || [];
+          function gtag() {
+            dataLayer.push(arguments);
+          }
+          gtag('js', new Date());
 
-</main>
+          gtag('config', 'UA-113233960-1');
+        }
+      }
+    </script>
 
-{% include 'footer.html' %}
-
-{% block scripts %}
-{% endblock %}
-<script src="js/ea.min.js"></script>
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-113233960-1"></script>
-<script type="text/javascript">
-  function CookiebotCallback_OnAccept() {
-    if (Cookiebot.consent.marketing) {
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-113233960-1');
-    }
-  };
-</script>
-
-<!-- Hotjar Tracking Code for efektywnyaltruizm.org -->
-<script type="text/javascript">
-  function CookiebotCallback_OnAccept() {
-    if (Cookiebot.consent.statistics) {
-      (function(h,o,t,j,a,r){
-          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-          h._hjSettings={hjid:389457,hjsv:6};
-          a=o.getElementsByTagName('head')[0];
-          r=o.createElement('script');r.async=1;
-          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-          a.appendChild(r);
-      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-    }
-  };
-</script>
-
-</body>
+    <!-- Hotjar Tracking Code for efektywnyaltruizm.org -->
+    <script type="text/javascript">
+      function CookiebotCallback_OnAccept() {
+        if (Cookiebot.consent.statistics) {
+          (function(h, o, t, j, a, r) {
+            h.hj =
+              h.hj ||
+              function() {
+                (h.hj.q = h.hj.q || []).push(arguments);
+              };
+            h._hjSettings = { hjid: 389457, hjsv: 6 };
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+          })(
+            window,
+            document,
+            'https://static.hotjar.com/c/hotjar-',
+            '.js?sv='
+          );
+        }
+      }
+    </script>
+  </body>
 </html>

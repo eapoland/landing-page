@@ -11,7 +11,7 @@
   background-position: center;
   background-size: cover;
   padding: 0;
-  
+
   h2 {
     font-size: 20px;
     max-width: 80vw;
@@ -28,12 +28,12 @@
   }
 
   .independent {
-    background: rgba(255,255,255,0.9);
+    background: rgba(255, 255, 255, 0.9);
   }
 
   .homepage-box {
     max-width: 700px;
-    background: rgba(255,255,255,0.74);
+    background: rgba(255, 255, 255, 0.74);
   }
 }
 
@@ -47,11 +47,21 @@ $firstImageXl: url('../images/space-1600.jpg');
   height: 60vmin;
 
   background-image: $firstImage;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.24) 0%,rgba(255,255,255,0.24) 100%), $firstImage;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.24) 0%,
+      rgba(255, 255, 255, 0.24) 100%
+    ),
+    $firstImage;
 
   @include media-breakpoint-up(xl) {
     background-image: $firstImageXl;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.24) 0%,rgba(255,255,255,0.24) 100%), $firstImageXl;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.24) 0%,
+        rgba(255, 255, 255, 0.24) 100%
+      ),
+      $firstImageXl;
   }
 }
 
@@ -63,11 +73,21 @@ $secondImageXl: url('../images/report-1600.jpg');
   height: 45vmin;
 
   background-image: $secondImage;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), $secondImage;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    ),
+    $secondImage;
 
   @include media-breakpoint-up(xl) {
     background-image: $secondImageXl;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), $secondImageXl;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.6) 100%
+      ),
+      $secondImageXl;
   }
 
   h2 {
@@ -88,17 +108,32 @@ $thirdImage: url('../images/office-1200.jpg');
 $thirdImageXl: url('../images/office-1600.jpg');
 .homepage-image--third {
   background-image: $thirdImageSm;
-  background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), $thirdImageSm;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0.6) 0%,
+      rgba(255, 255, 255, 0.6) 100%
+    ),
+    $thirdImageSm;
   min-height: 55vmin;
 
   @include media-breakpoint-between(sm, lg) {
     background-image: $thirdImage;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), $thirdImage;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.6) 100%
+      ),
+      $thirdImage;
   }
 
   @include media-breakpoint-up(xl) {
     background-image: $thirdImageXl;
-    background-image: linear-gradient(to bottom, rgba(255,255,255,0.6) 0%,rgba(255,255,255,0.6) 100%), $thirdImageXl;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.6) 0%,
+        rgba(255, 255, 255, 0.6) 100%
+      ),
+      $thirdImageXl;
   }
 }
 
@@ -119,9 +154,9 @@ $thirdImageXl: url('../images/office-1600.jpg');
 
 .homepage-box {
   align-items: center;
-  background: #F8FAFA;
+  background: #f8fafa;
   border-radius: 3px;
-  box-shadow: 2px 2px 5px -1px rgba(0,0,0,0.5);
+  box-shadow: 2px 2px 5px -1px rgba(0, 0, 0, 0.5);
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

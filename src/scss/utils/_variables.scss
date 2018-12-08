@@ -5,7 +5,7 @@
 //Colors
 $primary: #0b91aa;
 $secondary: #f0d02f;
-$accent: #0B91AA;
+$accent: #0b91aa;
 
 $danger: #dc3545;
 
@@ -21,25 +21,23 @@ $text-color: #4a4a4a;
 // adapting to different screen sizes, for use in media queries.
 
 $grid-breakpoints: (
-        xs: 0,
-        md: 768px,
-        lg: 992px
+  xs: 0,
+  md: 768px,
+  lg: 992px
 ) !default;
-@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-ascending($grid-breakpoints, '$grid-breakpoints');
 @include _assert-starts-at-zero($grid-breakpoints);
-
 
 // Grid containers
 //
 // Define the maximum width of `.container` for different screen sizes.
 
 $container-max-widths: (
-        sm: 540px,
-        md: 720px,
-        lg: 960px
+  sm: 540px,
+  md: 720px,
+  lg: 960px
 ) !default;
-@include _assert-ascending($container-max-widths, "$container-max-widths");
-
+@include _assert-ascending($container-max-widths, '$container-max-widths');
 
 // Grid columns
 //
@@ -47,5 +45,3 @@ $container-max-widths: (
 
 $grid-columns: 12 !default;
 $grid-gutter-width: 30px !default;
-
-

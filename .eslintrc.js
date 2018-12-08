@@ -1,4 +1,4 @@
 module.exports = {
-    "extends": "google",
-    "installedESLint": true
+  extends: 'google',
+  installedESLint: true
 };

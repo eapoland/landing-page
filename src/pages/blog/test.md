@@ -1,6 +1,6 @@
 - list element 1
 - list element 2
 
-**bold** *italic*
+**bold** _italic_
 
 > Quote

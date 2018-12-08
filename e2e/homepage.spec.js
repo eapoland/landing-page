@@ -7,15 +7,19 @@ describe('homepage', function() {
   });
 
   it('should screenshot everything', function() {
-    screenshotEverything([ {
-      note: 'top',
-      url: 'http://localhost:9000/'
-    }, {
-      note: 'second',
-      url: 'http://localhost:9000/#image-second'
-    }, {
-      note: 'third',
-      url: 'http://localhost:9000/#image-third'
-    }]);
+    screenshotEverything([
+      {
+        note: 'top',
+        url: 'http://localhost:9000/'
+      },
+      {
+        note: 'second',
+        url: 'http://localhost:9000/#image-second'
+      },
+      {
+        note: 'third',
+        url: 'http://localhost:9000/#image-third'
+      }
+    ]);
   });
 });

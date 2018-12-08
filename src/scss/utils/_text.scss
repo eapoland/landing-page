@@ -5,29 +5,29 @@
 // Responsive alignment
 
 @each $breakpoint in map-keys($grid-breakpoints) {
-    @include media-breakpoint-up($breakpoint) {
-        $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
 
-        .text#{$infix}-left {
-            text-align: left;
-        }
-        .text#{$infix}-right {
-            text-align: right;
-        }
-        .text#{$infix}-center {
-            text-align: center;
-        }
+    .text#{$infix}-left {
+      text-align: left;
     }
+    .text#{$infix}-right {
+      text-align: right;
+    }
+    .text#{$infix}-center {
+      text-align: center;
+    }
+  }
 }
 
 .text-primary {
-    color: $primary !important;
+  color: $primary !important;
 }
 
 .text-secondary {
-    color: $secondary !important;
+  color: $secondary !important;
 }
 
 .text-underline {
-    text-decoration: underline !important;
+  text-decoration: underline !important;
 }

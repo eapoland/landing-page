@@ -7,7 +7,8 @@
   margin-top: 16px;
   text-align: center;
 
-  h2, p {
+  h2,
+  p {
     margin: 24px 0;
   }
 
@@ -18,13 +19,13 @@
 
 // zaangazowani
 .team {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 
-    @include media-breakpoint-up(md) {
-      justify-content: left;
-    }
+  @include media-breakpoint-up(md) {
+    justify-content: left;
+  }
 }
 
 .person {
@@ -94,8 +95,7 @@
   }
 }
 
-[data-toggle="collapse"] {
-
+[data-toggle='collapse'] {
   color: $accent;
   display: block;
 
@@ -135,86 +135,84 @@
   position: relative;
   height: 0;
   overflow: hidden;
-  transition: height .35s ease;
+  transition: height 0.35s ease;
 }
 
 //Dołącz do nas section
 .join-us-section {
-
-    h2 {
-        @include media-breakpoint-up(md) {
-            display: inline-block;
-            margin-bottom: 45px;
-        }
-    }
-
+  h2 {
     @include media-breakpoint-up(md) {
-        padding-bottom: 45px;
+      display: inline-block;
+      margin-bottom: 45px;
     }
+  }
+
+  @include media-breakpoint-up(md) {
+    padding-bottom: 45px;
+  }
 }
 
 //fb
 .fb-events {
-
-    @include media-breakpoint-up(md) {
-        border-right: 3px solid $primary;
-        font-size: 18px;
-    }
+  @include media-breakpoint-up(md) {
+    border-right: 3px solid $primary;
+    font-size: 18px;
+  }
 }
 
 .fb-logo {
-    font-size: 60px;
+  font-size: 60px;
 
-    &:hover {
-        text-decoration: none;
-    }
+  &:hover {
+    text-decoration: none;
+  }
 }
 
 .fb-groups-list {
-    font-weight: 700;
-    margin-top: 24px;
+  font-weight: 700;
+  margin-top: 24px;
 
-    li {
-        margin-bottom: 5px;
-    }
+  li {
+    margin-bottom: 5px;
+  }
 
-    @include media-breakpoint-up(md) {
-        font-size: 20px;
-    }
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+  }
 }
 
 //organizacje
 .organizations {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .organization {
-    text-align: center;
-    width: 130px;
-    color: $primary;
+  text-align: center;
+  width: 130px;
+  color: $primary;
 
-    &:not(:last-child) {
-        margin-right: 5px;
-
-        @include media-breakpoint-up(md) {
-            margin-right: 20px;
-        }
-    }
+  &:not(:last-child) {
+    margin-right: 5px;
 
     @include media-breakpoint-up(md) {
-        width: 140px;
+      margin-right: 20px;
     }
+  }
+
+  @include media-breakpoint-up(md) {
+    width: 140px;
+  }
 }
 
 .organization__img {
-    width: 85px;
-    height: 85px;
-    object-fit: contain;
-    border-radius: 50%;
-    margin-bottom: 5px;
+  width: 85px;
+  height: 85px;
+  object-fit: contain;
+  border-radius: 50%;
+  margin-bottom: 5px;
 
-    @include media-breakpoint-up(md) {
-        margin-bottom: 10px;
-    }
+  @include media-breakpoint-up(md) {
+    margin-bottom: 10px;
+  }
 }

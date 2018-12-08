@@ -1,6 +1,6 @@
 language: node_js
 node_js:
-  - "10"
+  - '10'
 
 script:
   - npm install
@@ -15,7 +15,7 @@ deploy:
   - provider: s3
     access_key_id: $ACCESS_KEY_ID
     secret_access_key: $SECRET_ACCESS_KEY
-    bucket: "efektywnyaltruizm.org"
+    bucket: 'efektywnyaltruizm.org'
     acl: public_read
     region: eu-central-1
     upload-dir: $TRAVIS_BRANCH
@@ -33,4 +33,4 @@ deploy:
     on:
       branches:
         only:
-        - master
+          - master
