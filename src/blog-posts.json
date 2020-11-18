@@ -1,23 +1,30 @@
 {
-    "post-3": {
-        "path": "blog/post-3.html",
-        "title": "Czy empatia zawsze jest dobra?",
-        "date": "17.03.2018",
-        "excerpt": "Wydaje się, że empatia jest nieodłącznym elementem moralności i to ona popycha nas do pomagania innym. Natomiast profesor Paul Bloom w swojej najnowszej książce „Przeciw Empatii. Argumenty za Racjonalnym Współczuciem” wprost przeciwstawia się empatii wykazując, że może ona wręcz &hellip;",
-        "info": "autor: Maria Gembarzewska-Truong"
+    "post-8": {
+        "path": "blog/warsztaty-wprowadzajace.html",
+        "title": "Wprowadzenie do Efektywnego Altruizmu",
+        "date": "01.01.2021",
+        "excerpt": "Efektywny Altruizm to pytanie o to, jak przynieść światu najwięcej dobra. To międzynarodowa społeczność szukająca odpowiedzi na to pytanie, by wykorzystać tę wiedzę w praktyce. Podczas spotkania opowiemy Wam historię Efektywnego Altruizmu ruchu i efektywnego altruizmu idei z której ten ruch wyrasta. Wychodząc od pytań filozoficznych, omówimy szereg praktycznych zagadnień związanych z dobroczynnością. Mamy nadzieję, że podczas tego spotkania przekonamy Cię, że każdy – także Ty – może zostać Efektywnym Altruistą. &hellip;",
+        "info": "prowadzący: Michał Trzęsimiech"
     },
-    "post-2": {
-        "path": "blog/post-2.html",
-        "title": "Dlaczego warto pomagać?",
-        "date": "20.01.2018",
-        "excerpt": "Na świecie obecnie żyje 7,5 miliarda ludzi z tego 10,7% (według danych Banku Światowego z 2011) żyje w skrajnym ubóstwie. O skrajnym ubóstwie mówimy wtedy gdy człowiek na przeżycie ma 1,9$ dziennie. Oczywiście możemy tu się spierać, że inaczej żyje się za taką kwotę w Europie niż np. w Azji. Natomiast Bank Światowy uwzględnia różnice w &hellip;",
-        "info": "autor: Maria Gembarzewska-Truong"
+    "post-7": {
+        "path": "blog/warsztaty-dla-organizacji.html",
+        "title": "Warsztaty dla organizacji, które chcą robić najwięcej dobra",
+        "date": "01.01.2021",
+        "excerpt": "Świat jest złożony, a nasz rozum ograniczony. Jako gatunek jesteśmy kiepscy w przewidywaniu przyszłości. A jednak znamy takie działania, które przynoszą rezultaty znacząco lepsze, niż ich alternatywy. Czy odpowiada za to wyłącznie los? A może jesteśmy w stanie zarządzić działaniem tak, aby przynieść światu zdecydowanie więcej dobra, niż miałoby to miejsce gdybyśmy zadziałali inaczej? W trakcie tych warsztatów poszukamy odpowiedzi na pytanie o to jak działać efektywnie, od podstaw do zaawansowanych narzędzi. &hellip;",
+        "info": "prowadzący: Michał Trzęsimiech"
     },
-    "post-1": {
-        "path": "blog/post-1.html",
-        "title": "Myśl jak efektywny altruista",
-        "date": "1.12.2017",
-        "excerpt": "Oto 5 kluczowych pytań, które zadaje efektywny altruizm.",
-        "info": "tłumaczenie: Justyna Ferenc | źródło oryginału: William MacAskill, \"Doing Good Better\""
+    "post-6": {
+        "path": "blog/ocalamy-swiat.html",
+        "title": "Warsztaty z ocalania świata. O globalnych ryzykach katastroficznych",
+        "date": "01.01.2021",
+        "excerpt": "Czy pandemii można było zapobiec? A jeśli tak, to w jaki sposób zapobiec kolejnej? Co z innymi zagrożeniami? Jak w nadchodzącej dekadzie zapobiec globalnym katastrofom? Od cyberwojny przez nieudane eksperymenty biotechnologiczne i ekstremalne zjawiska pogodowe związane z ociepleniem klimatu – przeprowadzimy Was przez najczarniejsze scenariusze nieodległych przyszłości. Poszukamy też nadziei w sposobach na które ludzkość może wyjść z tych z kryzysów obronną ręką. &hellip;",
+        "info": "prowadzący: Michał Trzęsimiech"
+    },
+    "post-5": {
+        "path": "blog/doradztwo.html",
+        "title": "Doradztwo filantropijne: którym organizacjom pomóc?",
+        "date": "01.01.2021",
+        "excerpt": "Gdy potrzebujemy pomocy medycznej, wybieramy sposoby leczenia, których skuteczność została potwierdzona naukowo. Gdy inwestujemy pieniądze, staramy się dowiedzieć jak najwięcej o wszystkich możliwościach, żeby wybrać taką, która przyniesie nam największe korzyści. Jeśli chodzi o czynienie dobra, często zapominamy o naszych standardach. Masz wyjątkowe możliwości, aby czynić dobro – dowiedz się w jaki je wykorzystać! &hellip;",
+        "info": "prowadzący: Marcin Tischner, Martyna Tomaszewska"
     }
 }
