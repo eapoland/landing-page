@@ -7,7 +7,6 @@ var pump = require('pump');
 var fs = require('fs');
 var wrapper = require('gulp-wrapper');
 var filter = require('gulp-filter');
-var markdown = require('gulp-markdown');
 
 const PATHS = {
     output: 'dist',
@@ -15,18 +14,9 @@ const PATHS = {
     pages: 'src/pages'
 };
 
-const BLOG_CONFIG = 'src/blog-posts.json';
-
-const blogPosts = JSON.parse(fs.readFileSync(BLOG_CONFIG, 'utf8'));
+const blogPosts = JSON.parse(fs.readFileSync('src/blog-posts.json', 'utf8'));
 const blogIds = {};
 for(let id in blogPosts) blogIds[blogPosts[id].path] = id;
-
-// Create *.html paths from *.md
-for(let id in blogPosts) {
-    let t = blogPosts[id].path.split('.');
-    if(t[t.length-1] === 'md') t[t.length-1] = 'html';
-    blogPosts[id].pub_path = t.join('.');
-}
 
 gulp.task('styles', function () {
     var processors = [
@@ -47,17 +37,13 @@ gulp.task('styles', function () {
 
 gulp.task('templates', function() {
     let post_filter = filter('**/blog/*', { restore: true });
-    let md_filter = filter('**/*.md', { restore: true });
 
     return gulp.src(PATHS.pages + '/**/*.+(html|js|css|md)')
         .pipe(post_filter)
-        .pipe(md_filter)
-        .pipe(markdown())
-        .pipe(md_filter.restore)
         .pipe(wrapper({
             header: function(file) {
-                let post_id = blogIds[file.path.match(/.*pages\/(.*)$/)[1]];
-                if(!post_id) console.log(`Note: No post with path ${file.path} has been registered in blog-posts.json!`);
+                let post_id = blogIds[file.path.match(/.*(blog\/.*)$/)[1]];
+                if(!post_id) console.log(`Error: No post with path ${file.path} has been registered in blog-posts.json!`);
 
                 return `
                 {% extends "blog.html" %}
