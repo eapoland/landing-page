@@ -6,8 +6,6 @@
 
 <section class="section-padding-top blog-list">
 
-  Warsztaty
-
   {% for id, post in blogPosts %}
 
   <article class="{% if loop.index % 2 == 1 %} background {% endif %} border-bottom ">
@@ -20,7 +18,7 @@
             </a>
           </h2>
 
-<!--          <small>Opublikowany {{ post.date }}</small>-->
+          <small>Opublikowany {{ post.date }}</small>
 
           <p>{{ post.excerpt | safe }}</p>
         </div>
